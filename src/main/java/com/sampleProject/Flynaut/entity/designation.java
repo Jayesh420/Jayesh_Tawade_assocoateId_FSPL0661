@@ -12,7 +12,7 @@ import java.time.LocalDateTime;
 public class designation {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int designationId;
+    private Long designationId;
     private String designationName;
 
     private boolean isActive;
