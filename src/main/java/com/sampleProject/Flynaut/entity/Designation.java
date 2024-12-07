@@ -7,12 +7,13 @@ import java.time.LocalDateTime;
 
 @Entity
 @Data
-@Table(name ="department")
-public class department {
+@Table(name ="designation")
+
+public class Designation {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long deptId;
-    private String deptName;
+    private Long designationId;
+    private String designationName;
 
     private boolean isActive;
     private String CreateBy;

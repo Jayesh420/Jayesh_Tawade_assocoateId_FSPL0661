@@ -1,18 +1,11 @@
-package com.sampleProject.Flynaut.entity;
+package com.sampleProject.Flynaut.dto;
 
-import jakarta.persistence.*;
 import lombok.Data;
 
 import java.time.LocalDateTime;
 
-@Entity
 @Data
-@Table(name ="designation")
-
-public class designation {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long designationId;
+public class DesignationDto {
     private String designationName;
 
     private boolean isActive;
